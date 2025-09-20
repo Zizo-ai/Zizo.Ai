@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zizo-ai - AI Solutions for Businesses</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body{margin:0;font-family:'Roboto',sans-serif;background:#0d1b2a;color:#fff;overflow-x:hidden;scroll-behavior:smooth;}
+a{text-decoration:none;}
+header{position:fixed;width:100%;top:0;background:#112240;padding:15px 0;text-align:center;z-index:1000;box-shadow:0 2px 10px rgba(0,0,0,0.3);}
+header nav a{color:#fff;margin:0 20px;font-weight:bold;transition:0.3s;}
+header nav a:hover{color:#00bfff;}
+
+/* Hero */
+.hero{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:100vh;background: linear-gradient(135deg,#0d1b2a,#1b2a47);position:relative;overflow:hidden;}
+.hero h1{font-size:3rem;color:#00bfff;margin-bottom:20px;opacity:0;transform:translateY(-30px);transition:1s ease;}
+.hero p{font-size:1.3rem;color:#cfd8dc;max-width:700px;margin-bottom:30px;opacity:0;transform:translateY(-30px);transition:1s ease 0.3s;}
+.hero .btn{background:#00bfff;color:#fff;padding:18px 40px;border-radius:50px;font-weight:bold;font-size:1.1rem;transition:0.3s;opacity:0;transform:translateY(-30px);transition:1s ease 0.6s;}
+.hero .btn:hover{background:#0099e6;}
+.hero .slider{margin-top:20px;font-size:1.2rem;color:#fff;min-height:30px;opacity:0;transform:translateY(-30px);transition:1s ease 0.9s;}
+
+/* Floating Shapes */
+.shape{position:absolute;border-radius:50%;opacity:0.15;animation:float 15s infinite;}
+.shape1{width:220px;height:220px;background:#00bfff;top:10%;left:5%;animation-delay:0s;}
+.shape2{width:300px;height:300px;background:#0099e6;top:60%;left:80%;animation-delay:2s;}
+.shape3{width:150px;height:150px;background:#00bfff;top:40%;left:50%;animation-delay:4s;}
+.shape4{width:100px;height:100px;background:#00bfff;top:20%;left:80%;animation-delay:6s;}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-25px);}}
+
+/* Services */
+.services{display:flex;flex-wrap:wrap;justify-content:center;gap:30px;padding:80px 20px;}
+.card{background:#112240;padding:30px;border-radius:12px;width:260px;text-align:center;box-shadow:0 8px 20px rgba(0,0,0,0.3);transition:0.3s;opacity:0;transform:translateY(50px);}
+.card i{font-size:2.5rem;color:#00bfff;margin-bottom:15px;transition:0.3s;}
+.card h3{color:#00bfff;margin-bottom:10px;}
+.card p{color:#cfd8dc;}
+.card:hover{transform:translateY(-10px) rotate(-1deg) scale(1.05);box-shadow:0 12px 25px rgba(0,0,0,0.5);}
+
+/* Testimonials */
+.testimonials{text-align:center;background:#0d1b2a;padding-bottom:80px;}
+.testimonial{background:#112240;margin:20px auto;padding:30px;border-radius:12px;max-width:500px;opacity:0;transform:translateY(50px);transition:0.6s;}
+.testimonial p{font-style:italic;color:#cfd8dc;}
+.testimonial h4{margin-top:15px;color:#00bfff;}
+
+/* CTA */
+.cta{text-align:center;padding:80px 20px;}
+.cta a{background:#00bfff;color:#fff;padding:18px 40px;border-radius:50px;font-weight:bold;font-size:1.2rem;transition:0.3s;}
+.cta a:hover{background:#0099e6;transform:scale(1.05);}
+
+/* Footer */
+footer{background:#112240;text-align:center;padding:40px 20px;color:#cfd8dc;opacity:0;transform:translateY(50px);transition:1s;}
+footer a{color:#00bfff;transition:0.3s;}
+footer a:hover{color:#0099e6;}
+
+/* Animations */
+.animate{opacity:1 !important;transform:translateY(0) !important;transition:1s;}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<a href="#services">Services</a>
+<a href="#testimonials">Testimonials</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Zizo-ai</h1>
+<p>Automate your business with AI: WhatsApp agents, smart CRM, content automation — all in one place.</p>
+<a href="contact.html" class="btn">Get Started</a>
+<div class="slider" id="slider"></div>
+<div class="shape shape1"></div>
+<div class="shape shape2"></div>
+<div class="shape shape3"></div>
+<div class="shape shape4"></div>
+</section>
+
+<section class="services" id="services">
+<div class="card"><i class="fa-solid fa-robot"></i><h3>AI WhatsApp Agents</h3><p>Respond instantly, send quotes, and book meetings automatically.</p></div>
+<div class="card"><i class="fa-solid fa-clipboard-list"></i><h3>AI CRM Tools</h3><p>Track leads and sales automatically with smart AI workflows.</p></div>
+<div class="card"><i class="fa-solid fa-pen-nib"></i><h3>AI Content Automation</h3><p>Generate daily posts and follow-ups to keep your business active.</p></div>
+</section>
+
+<section class="testimonials" id="testimonials">
+<h2>What Our Clients Say</h2>
+<div class="testimonial"><p>"Zizo-ai transformed our response time! Clients love the instant WhatsApp replies."</p><h4>- Ahmed K.</h4></div>
+<div class="testimonial"><p>"The AI CRM keeps our sales team on track automatically. Highly recommend Zizo-ai!"</p><h4>- Fatima R.</h4></div>
+</section>
+
+<section class="cta">
+<h2>Ready to boost your business with AI?</h2>
+<a href="https://wa.me/971581840646" target="_blank">Chat on WhatsApp</a>
+</section>
+
+<footer>
+<p>Email: <a href="mailto:hamzathechwl@gmail.com">hamzathechwl@gmail.com</a></p>
+<p>LinkedIn: <a href="https://www.linkedin.com/in/syed-hamza-shah-366673274/" target="_blank">linkedin.com/in/syed-hamza-shah-366673274/</a></p>
+<p>Address: Business Bay, Dubai, UAE</p>
+</footer>
+
+<script>
+// Slider
+const texts=["Tired of late replies to clients?","Losing leads because your team can’t respond instantly?","Need quotes & meetings booked automatically?"];
+let i=0;
+function slide(){document.getElementById("slider").innerText=texts[i];i=(i+1)%texts.length;}
+setInterval(slide,2500);
+slide();
+
+// Scroll animations
+const elements=document.querySelectorAll('.card, .testimonial, .hero h1, .hero p, .hero .btn, .hero .slider, footer');
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('animate');}})},{threshold:0.2});
+elements.forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>

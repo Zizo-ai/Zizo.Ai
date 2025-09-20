@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You - Zizo-ai</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body { margin:0; font-family:'Roboto',sans-serif; background:#0d1b2a; color:#fff; display:flex; flex-direction:column; justify-content:center; align-items:center; min-height:100vh; text-align:center; overflow-x:hidden; }
+h1 { font-size:3rem; color:#00bfff; margin-bottom:20px; opacity:0; transform:translateY(-30px); transition:1s ease; }
+p { font-size:1.2rem; color:#cfd8dc; margin-bottom:40px; max-width:500px; opacity:0; transform:translateY(-30px); transition:1s ease 0.3s; }
+a { display:inline-block; background:#00bfff; color:#fff; padding:18px 40px; margin:10px; border-radius:50px; font-weight:bold; font-size:1.1rem; transition:0.3s; opacity:0; transform:translateY(-30px); transition:1s ease 0.6s; }
+a:hover { background:#0099e6; transform:scale(1.05); }
+
+/* Floating Shapes */
+.shape { position:absolute; border-radius:50%; opacity:0.15; animation:float 15s infinite; }
+.shape1 { width:220px; height:220px; background:#00bfff; top:10%; left:5%; animation-delay:0s; }
+.shape2 { width:300px; height:300px; background:#0099e6; top:60%; left:80%; animation-delay:2s; }
+.shape3 { width:150px; height:150px; background:#00bfff; top:40%; left:50%; animation-delay:4s; }
+.shape4 { width:100px; height:100px; background:#00bfff; top:20%; left:80%; animation-delay:6s; }
+@keyframes float { 0%,100%{transform:translateY(0);}50%{transform:translateY(-25px);} }
+
+.animate { opacity:1 !important; transform:translateY(0) !important; transition:1s; }
+</style>
+</head>
+<body>
+
+<div class="shape shape1"></div>
+<div class="shape shape2"></div>
+<div class="shape shape3"></div>
+<div class="shape shape4"></div>
+
+<h1>Thank You!</h1>
+<p>Your message has been sent successfully. I’ll get back to you shortly. Meanwhile, you can chat directly on WhatsApp for instant response.</p>
+
+<a href="index.html">Back to Home</a>
+<a href="https://wa.me/971581840646" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+
+<script>
+// Scroll Animations
+const elements=document.querySelectorAll('h1, p, a');
+const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('animate');}})},{threshold:0.2});
+elements.forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
